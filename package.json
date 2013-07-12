@@ -1,0 +1,40 @@
+{
+  "name": "uncommentify",
+  "description": "A through stream that removes comments from js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/shama/uncommentify",
+  "author": {
+    "name": "Kyle Robinson Young",
+    "url": "http://dontkry.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shama/uncommentify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shama/uncommentify/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/shama/uncommentify/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "dependencies": {
+    "falafel": "~0.2.1",
+    "through": "~2.3.4"
+  },
+  "devDependencies": {
+    "tape": "~1.0.4"
+  },
+  "keywords": [
+    "strip",
+    "comments"
+  ]
+}

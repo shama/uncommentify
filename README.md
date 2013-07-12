@@ -8,7 +8,9 @@ A through stream that removes comments with [falafel](https://npmjs.org/package/
 // Strip banner comments from js
 var strip = require('uncommentify')();
 var fs = require('fs');
-fs.createReadStream('index.js').pipe(strip).pipe(fs.createWriteStream('no-banner-comments.js'));
+fs.createReadStream('index.js')
+  .pipe(strip)
+  .pipe(fs.createWriteStream('no-banner-comments.js'));
 ```
 
 ```js
@@ -17,7 +19,9 @@ var strip = require('uncommentify')({
   all: true,
 });
 var fs = require('fs');
-fs.createReadStream('index.js').pipe(strip).pipe(fs.createWriteStream('no-comments.js'));
+fs.createReadStream('index.js')
+  .pipe(strip)
+  .pipe(fs.createWriteStream('no-comments.js'));
 ```
 
 ### Example Banner Comments

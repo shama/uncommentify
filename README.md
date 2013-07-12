@@ -60,10 +60,10 @@ Removes all comments.
 ### `force`
 Will remove comments that begin with `/*!` or `//!` which are not normally removed.
 
-### 'line'
+### `line`
 Set to `false` to not remove `// line` comments.
 
-### 'block'
+### `block`
 Set to `false` to not remove `/* block */` comments.
 
 ## releases

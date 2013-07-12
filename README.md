@@ -24,6 +24,13 @@ fs.createReadStream('index.js')
   .pipe(fs.createWriteStream('no-comments.js'));
 ```
 
+```js
+// Strip comments synchronously
+var strip = require('uncommentify').sync;
+var fs = require('fs');
+var uncommented = strip(fs.readFileSync('index.js'), {all:true});
+```
+
 ### Example Banner Comments
 By default, uncommentify will just remove the first found banner comment.
 

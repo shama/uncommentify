@@ -74,3 +74,12 @@ test('dont remove block comments', function(t) {
     t.ok(result.indexOf('//') === -1);
   });
 });
+
+test('sync', function(t) {
+  t.plan(2);
+  var strip = createStrip.sync;
+  var src = fs.readFileSync(path.join(__dirname, 'fixtures', 'block.js'));
+  var result = strip(String(src), {all:true});
+  t.ok(result.indexOf('/*') === -1);
+  t.ok(result.indexOf('//') === -1);
+});

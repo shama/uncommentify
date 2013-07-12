@@ -75,6 +75,7 @@ Set to `false` to not remove `/* block */` comments.
 
 ## releases
 
+* 0.1.1 - add sync
 * 0.1.0 - initial release
 
 ## license

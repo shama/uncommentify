@@ -1,7 +1,7 @@
 {
   "name": "uncommentify",
   "description": "A through stream that removes comments from js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/shama/uncommentify",
   "author": {
     "name": "Kyle Robinson Young",
